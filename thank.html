@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CoolPlay Oyun Dünyası - Mesajınız için teşekkür ederiz. Türkiye'nin en iyi masa oyunları mağazası.">
+    <meta name="keywords" content="masa oyunları, board games, kutu oyunları, teşekkür, başarılı form, coolplay, türkiye">
+    <meta name="author" content="CoolPlay Oyun Dünyası">
+    <title>Teşekkürler | CoolPlay Oyun Dünyası</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        .thank-you-section {
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .thank-you-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .thank-you-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .thank-you-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #f1f8f1;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4caf50;
+            font-size: 40px;
+            position: relative;
+        }
+
+        .thank-you-icon::before {
+            content: '✓';
+            font-weight: bold;
+        }
+
+        .thank-you-icon::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border: 2px dashed #4caf50;
+            border-radius: 50%;
+            animation: spin 10s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .thank-you-title {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .thank-you-message {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .back-to-home {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(93, 63, 211, 0.3);
+        }
+
+        .back-to-home:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(93, 63, 211, 0.4);
+            color: white;
+        }
+
+        .dice-decoration {
+            position: absolute;
+            background-color: rgba(93, 63, 211, 0.1);
+            border-radius: 8px;
+        }
+
+        .dice-1 {
+            width: 40px;
+            height: 40px;
+            top: 30px;
+            left: 20px;
+            transform: rotate(15deg);
+        }
+
+        .dice-2 {
+            width: 30px;
+            height: 30px;
+            bottom: 40px;
+            right: 30px;
+            transform: rotate(-10deg);
+        }
+
+        .dice-3 {
+            width: 25px;
+            height: 25px;
+            top: 70px;
+            right: 40px;
+            transform: rotate(25deg);
+        }
+    </style>
+</head>
+<body>
+<!-- Header part start -->
+<header class="main_menu home_menu">
+    <div class="container">
+        <nav class="navbar">
+            <a class="navbar-brand" href="/">
+                <img src="img/favicon.ico" alt="CoolPlay Board Games">
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <div class="hamburger"></div>
+            </label>
+
+            <div class="nav-wrapper">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Ana Sayfa</a>
+                </li>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Header part end -->
+
+<!-- Thank You Section Start -->
+<section class="thank-you-section">
+    <div class="thank-you-container">
+        <div class="dice-decoration dice-1"></div>
+        <div class="dice-decoration dice-2"></div>
+        <div class="dice-decoration dice-3"></div>
+
+        <div class="thank-you-icon"></div>
+        <h1 class="thank-you-title">Teşekkür Ederiz!</h1>
+        <p class="thank-you-message">Mesajınız başarıyla gönderildi. Ekibimiz en kısa sürede sizinle iletişime geçecektir. CoolPlay Oyun Dünyası'na gösterdiğiniz ilgi için teşekkür ederiz.</p>
+        <a href="/" class="back-to-home">Ana Sayfaya Dön</a>
+    </div>
+</section>
+<!-- Thank You Section End -->
+
+<!-- Footer Start -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>CoolPlay Oyun Dünyası</h2>
+                <p>Türkiye'nin masa oyunu uzmanı</p>
+                <p>E-posta: info@game-coolplay.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="/">Ana Sayfa</a></li>
+                    <li><a href="#kategoriler">Kategoriler</a></li>
+                    <li><a href="#populer-oyunlar">Popüler Oyunlar</a></li>
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Yasal</h3>
+                <ul>
+                    <li><a href="privacy.html">Gizlilik Politikası</a></li>
+                    <li><a href="cookies.html">Çerez Politikası</a></li>
+                    <li><a href="terms.html">Koşullu ifadeler</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; CoolPlay Oyun Dünyası. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+</body>
+</html>
